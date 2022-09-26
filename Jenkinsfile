@@ -3,7 +3,7 @@ pipeline {
         label 'built-in'
     }
     stages {
-        stage ('install httpd'){
+        /*stage ('install httpd'){
             steps {
                 sh "yum install httpd -y"
             }
@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh "service httpd start"
             }
-        }
+        }*/
         stage ('deployment of index'){
             steps {
                 sh "cp -r index.html /var/www/html/"
